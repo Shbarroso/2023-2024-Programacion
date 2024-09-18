@@ -6,7 +6,7 @@ package es.ies.puerto;
  */
 public class Ejercicio12 {
     public static void main(String[] args) {
-        shor diasAno = 365;
+        short diasAno = 365;
         System.out.println("Los dias en un ano son: "+diasAno);
     }
 }
