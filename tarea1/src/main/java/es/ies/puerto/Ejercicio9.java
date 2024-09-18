@@ -6,8 +6,9 @@ package es.ies.puerto;
  */
 public class Ejercicio9 {
     public static void main(String[] args) {
-        int anoNacimiento = 29/12/2004;
-        int anoActual = 17/12/2024;
-        System.out.println("Hello world!");
+        int anoNacimiento = 2004;
+        int anoActual = 2024;
+        int edad = anoActual - anoNacimiento;
+        System.out.println("Mi edad es: " +edad);
     }
 }

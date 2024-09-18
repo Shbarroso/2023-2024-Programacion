@@ -9,6 +9,7 @@ package es.ies.puerto;
  */
 public class Ejercicio4 {
     public static void main(String[] args) {
-        System.out.println("Hola mundo");
+        boolean mayorEdad = true;
+        System.out.println("La persona es mayor de edad: "+mayorEdad);
     }
 }
