@@ -16,5 +16,6 @@ public class Ejercicio7 {
         gradoC = sc.nextDouble();
         gradoF = (gradoC * 9.5d) +32;
         System.out.println("Los grados Celsius a Fahrenheit es: "+gradoF);
+        sc.close();
     }
 }

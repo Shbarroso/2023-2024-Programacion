@@ -14,5 +14,6 @@ public class Ejercicio10 {
         byte numero;
         numero = sc.nextByte();
         System.out.println("El valor es: "+ numero);
+        sc.close();
     }
 }

@@ -9,6 +9,7 @@ public class Ejercicio16 {
         int numero1 = 10;
         int numero2 = 5;
         int division = numero1/numero2;
-        System.out.println("La division es: "+division);
+        int residuo = numero1 % numero2;
+        System.out.println("La division es: "+division+ " y el residuo es: "+residuo);
     }
 }
