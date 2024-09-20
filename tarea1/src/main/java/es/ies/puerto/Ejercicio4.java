@@ -9,7 +9,14 @@ package es.ies.puerto;
  */
 public class Ejercicio4 {
     public static void main(String[] args) {
+        int edad = 12;
         boolean mayorEdad = true;
-        System.out.println("La persona es mayor de edad: "+mayorEdad);
+        boolean menorEdad = false;
+        if(edad >= 18) {
+            System.out.println("La persona es mayor de edad: "+mayorEdad);
+        }else{
+            System.out.println("La persona es mayor de edad: " +menorEdad);
+        }
+        
     }
 }

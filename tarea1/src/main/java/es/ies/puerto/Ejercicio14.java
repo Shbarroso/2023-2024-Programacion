@@ -6,11 +6,11 @@ package es.ies.puerto;
  */
 public class Ejercicio14 {
     public static void main(String[] args) {
-        boolean siTiene = true;
-        boolean noTiene = false;
+        boolean tieneLicencia = true;
+        boolean tieneCoche = true;
 
-        System.out.println("Si tiene licensia de conducir: " +siTiene);
-        System.out.println("No tiene licensia de conducir: " +noTiene);
+        System.out.println("Si tiene licensia de conducir: " +tieneLicencia);
+        System.out.println("Si tiene vehiculo: " +tieneCoche);
 
     }
 }
