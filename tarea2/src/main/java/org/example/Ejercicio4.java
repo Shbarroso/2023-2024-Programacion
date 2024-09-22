@@ -19,6 +19,7 @@ public class Ejercicio4 {
         int suma;
         suma = numero1 + numero2;
 
+
         System.out.println("El resultado de la suma es: "+suma);
         scanner.close();
     }

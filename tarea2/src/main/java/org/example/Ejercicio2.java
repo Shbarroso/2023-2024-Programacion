@@ -12,7 +12,7 @@ public class Ejercicio2 {
         System.out.print("Introduce el radio del circulo: ");
 
         double radio = scanner.nextDouble();
-        double area = Math.PI * ((radio) * 2);
+        double area = Math.PI * Math.pow(radio, 2);
 
         System.out.println("La area del circulo es: "+area);
         scanner.close();
