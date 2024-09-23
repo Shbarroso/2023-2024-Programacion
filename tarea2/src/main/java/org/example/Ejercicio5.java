@@ -11,8 +11,10 @@ public class Ejercicio5 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce el primer numero: ");
         float numero1 = scanner.nextInt();
+
         System.out.print("Introduce el segundo numero: ");
         float numero2 = scanner.nextInt();
+        
         System.out.print("Introduce el tercer numero: ");
         float numero3 = scanner.nextInt();
 

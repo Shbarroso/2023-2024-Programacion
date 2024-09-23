@@ -13,7 +13,7 @@ public class Ejercicio3 {
         double gradoF;
         System.out.print("Introduce los gradosC:");
         gradoC = sc.nextDouble();
-        gradoF = (gradoC * 9.5d) +32;
+        gradoF = (gradoC * 9/5) +32;
         System.out.println("Los grados Celsius a Fahrenheit es: "+gradoF);
         sc.close();
 
