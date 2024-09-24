@@ -10,8 +10,9 @@ public class Ejercicio6 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce un numero: ");
         int numero = scanner.nextInt();
+        int resultado = numero % 2;
 
-        if (numero % 2 == 0){
+        if (resultado == 0){
             System.out.println("El numero es par");
         }else {
             System.out.println("El numero es impar");
