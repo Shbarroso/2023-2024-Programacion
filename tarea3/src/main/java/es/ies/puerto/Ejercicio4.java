@@ -16,15 +16,15 @@ public class Ejercicio4 {
         System.out.print("Introduce tu clase: ");
 
         String clase = scanner.nextLine();
+        clase = clase.toLowerCase();
 
-        String nombre1 = "Sith";
-        String nombre2 = "Jedi";
+        String nombre1 = "sith";
+        String nombre2 = "jedi";
 
-        if (clase == nombre1 || clase == nombre2) {
+        if (clase.equals(nombre1) || clase.equals(nombre2)) {
             System.out.println("Puedes usar la fuerza");
         }else {
             System.out.println("No puedes usar la fuerza");
-
         }
 
     }
