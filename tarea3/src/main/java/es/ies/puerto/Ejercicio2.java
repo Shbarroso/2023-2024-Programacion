@@ -12,6 +12,7 @@ public class Ejercicio2 {
     static Scanner scanner;
     public static void main(String[] args) {
         scanner = new Scanner(System.in);
+        
         System.out.print("Introoduce los puntos de experiencia: ");
         int experiencia = scanner.nextInt();
 

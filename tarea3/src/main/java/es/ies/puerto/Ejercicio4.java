@@ -21,11 +21,19 @@ public class Ejercicio4 {
         String nombre1 = "sith";
         String nombre2 = "jedi";
 
-        if (clase.equals(nombre1) || clase.equals(nombre2)) {
-            System.out.println("Puedes usar la fuerza");
-        }else {
-            System.out.println("No puedes usar la fuerza");
-        }
 
+        switch (clase) {
+            case "sith":
+                System.out.println("Puedes usar la fuerza");
+                break;
+            case "jedi":
+                System.out.println("Puedes usar la fuerza");
+                break;
+
+            default:
+                System.out.println("No puedes usar la fuerza");
+                break;
+        }
+        scanner.close();
     }
 }
