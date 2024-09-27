@@ -13,7 +13,7 @@ public class Ejercicio9 {
     public static void main(String[] args) {
         scanner = new Scanner(System.in);
 
-        System.out.println("Introducw los valores de ki1 y ki2: ");
+        System.out.println("Introduce los valores de ki1 y ki2: ");
         int ki1 = scanner.nextInt();
         int ki2 = scanner.nextInt();
 
