@@ -1,5 +1,6 @@
 package es.ies.puerto;
 
+import java.util.Scanner;
 
 /**
  * Si tienes un arma de fuego y munición, puedes luchar contra los zombies.
@@ -8,20 +9,35 @@ package es.ies.puerto;
  * @author Shbarroso
  */
 public class Ejercicio16 {
+    static Scanner scanner;
     public static void main(String[] args) {
+        scanner = new Scanner(System.in);
 
-        System.out.print("Introdce un tipo de arma: ");
-        String armaFuego = "Pistola";
-        String armaCuerpo = "Espada";
-        String noArma = "Manos";
-        String municion = "9mm";
+        System.out.print("Introduce un arma (fuego, cuerpo a cuerpo, ninguna): ");
+        String arma = scanner.nextLine();
+        arma = arma.toLowerCase();
 
-        if (armaFuego.equals("Pistola") && municion.equals("9mm")){
-            System.out.println("Puedes luchar contra los zombies");
-        } else if (armaCuerpo.equals("Espada")) {
-            System.out.println("Puedes defenderte");
-        } else if (noArma.equals("Manos")) {
-            System.out.println("Debes huir");
+        switch (arma) {
+            case "fuego":
+                System.out.println("¿Cuanta municion? tienes? ");
+                int municion = scanner.nextInt();
+                if (municion > 0) {
+                    System.out.println("Puedes luchar contra los zombies");
+                } else {
+                    System.out.println("Debes huir");
+                }
+                break;
+            case "cuerpo a cuerpo":
+                System.out.println("Puedes defenderte");
+                break;
+            case "ninguna":
+                System.out.println("Debes huir");
+                break;
+            default:
+                System.out.println("Opcion incorrecta.");
+                break;
         }
+        scanner.close();
+
     }
 }
