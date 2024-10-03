@@ -1,25 +1,19 @@
 package es.ies.puerto;
 /**
- * Declara un array que contenga las palabras de la frase 
- * "Por el poder de Grayskull, yo tengo el poder". Seguido, 
- * imprime la frase palabra por palabra desde el último elemento hasta el primer.
+ * Los héroes de un equipo de aventureros tienen diferentes cantidades de puntos de vida. 
+ * Escribe un programa que calcule la suma total de puntos de vida de todos los aventureros en un array.
  * @author Shbarroso
  */
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-        String[] palabra = {"Por", "el", "poder", "de", "Grayskull,", "yo", "tengo", "el", "poder"};
+        int[] puntosDeVida = {100, 200, 150, 180, 90};
 
-        for(int i = 0; i < palabra.length; i++){
-            System.out.print(palabra[i]+ " ");
+        int suma = 0;
+        for(int i=0; i < puntosDeVida.length; i++){
+            suma = suma + puntosDeVida[i];
         }
-        System.out.println();
-        System.out.println("Inversa");
-        for(int i = palabra.length - 1; i >=0; i--){
-            System.out.print(palabra[i]+ " ");
-
-        }
-        
+        System.out.print("Total de puntos de vida: "+suma);
     }
 
 }
