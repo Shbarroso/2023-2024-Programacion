@@ -14,8 +14,8 @@ public class Ejercicio1 {
     int suma = 0;
     int max = midiclorianos[0];
     int min = midiclorianos[0];
-    int jediMax = 0; // índice del Jedi con más midiclorianos
-    int jediMin = 0; // índice del Jedi con menos midiclorianos
+    int jediMax = 0;
+    int jediMin = 0;
 
     
     for (int i = 0; i < midiclorianos.length; i++) {

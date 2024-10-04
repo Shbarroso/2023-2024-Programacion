@@ -17,6 +17,7 @@ public class Ejercicio7 {
             if (!criaturaAEliminar.equals(criaturas[i])) {
                 criaturaFinal[j] = valor;
                 j++;
+
             }
         }
 
