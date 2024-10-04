@@ -11,8 +11,7 @@ public class Ejercicio4 {
 
         for(int i = 0; i < inventario.length; i++){
             invertido[inventario.length -1 - i] = inventario[i];
-
+            System.out.println("El orden de los objetos invertidos es: "+inventario[i]);
         }
-        System.out.println("El orden de los objetos invertidos es: ");
     }
 }
