@@ -8,5 +8,7 @@ public class Ejercicio6 {
     public static void main(String[] args) {
         String[] recursos = {"Bláster", "Cristal Kyber", "Sable de luz", "Pistola"};
         String recursoBuscado = "Cristal Kyber";
+
+        
     }
 }
