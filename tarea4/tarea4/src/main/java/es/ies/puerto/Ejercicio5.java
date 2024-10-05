@@ -10,7 +10,6 @@ public class Ejercicio5 {
         int jedi = 0;
         int sith = 0;
 
-
         for(int i = 0; i < fuerzas.length; i++){
             if (fuerzas[i] % 2 == 0) {
                 jedi++;

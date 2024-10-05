@@ -7,6 +7,12 @@ package es.ies.puerto;
 public class Ejercicio8 {
     public static void main(String[] args) {
         String[] botinEquipo1 = {"Espada mágica", "Escudo resistente"};
-        String[] botinEquipo2 = {"Anillo de poder", "Armadura encantada"}; 
+        String[] botinEquipo2 = {"Anillo de poder", "Armadura encantada"};
+
+        String[] botinEquipo3 = new String[botinEquipo1.length + botinEquipo2.length];
+
+        for ()
+
+
     }
 }
