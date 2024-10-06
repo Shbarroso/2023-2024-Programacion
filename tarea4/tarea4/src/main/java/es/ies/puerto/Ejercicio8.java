@@ -11,8 +11,6 @@ public class Ejercicio8 {
 
         String[] botinEquipo3 = new String[botinEquipo1.length + botinEquipo2.length];
 
-        for ()
-
 
     }
 }

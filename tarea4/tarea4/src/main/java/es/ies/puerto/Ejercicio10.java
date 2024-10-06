@@ -7,5 +7,17 @@ package es.ies.puerto;
 public class Ejercicio10 {
     public static void main(String[] args) {
         int[] rankings = {300, 500, 200, 400, 100};
+        for (int i = 0; i < rankings.length - 1; i++) {
+            for (int j = 0; j < rankings.length - 1 - i; j++) {
+                if (rankings[j] > rankings[j + 1]) {
+                    int temporal = rankings[j];
+                    rankings[j] = rankings[j + 1];
+                    rankings[j + 1] = temporal;
+                }
+            }
+        }
+        for (int ranking : rankings) {
+            System.out.print(ranking+ " ");
+        }
     }
 }

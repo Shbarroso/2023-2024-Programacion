@@ -7,7 +7,20 @@ package es.ies.puerto;
  */
 public class Ejercicio12 {
     public static void main(String[] args) {
-        String[] equipo1 = {"Ironman", "Thor", "Hulk"};
-        String[] equipo2 = {"Capitán América", "Thor", "Hawkeye"}; 
+        String[] hechizos = {"Fuego Ardiente", "Escudo Protector", "Rayo de Fuego", "Escudo Mágico", "Flecha Helada"};
+
+        int hechizosAtaque = 0;
+        int hechizosDefensa = 0;
+
+        for (String hechizo : hechizos) {
+            if (hechizo.contains("Fuego")) {
+                hechizosAtaque++;
+            }
+            if (hechizo.contains("Escudo")) {
+                hechizosDefensa++;
+            }
+        }
+        System.out.println("Hechizos de ataque = " + hechizosAtaque);
+        System.out.println("Hechizos de defensa = " + hechizosDefensa);
     }
 }
