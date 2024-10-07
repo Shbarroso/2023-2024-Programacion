@@ -7,7 +7,7 @@ package es.ies.puerto;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
-        int[] nivelesDeAtaque = {300, 150, 500, 200, 250}; // Niveles de ataque de los guerreros // Salida esperada: Máximo = 500, Mínimo = 150
+        int[] nivelesDeAtaque = {300, 150, 500, 200, 250};
 
         int max = nivelesDeAtaque[0];
         int min = nivelesDeAtaque[0];

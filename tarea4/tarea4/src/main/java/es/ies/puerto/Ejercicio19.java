@@ -8,5 +8,7 @@ package es.ies.puerto;
 public class Ejercicio19 {
     public static void main(String[] args) {
         String[] pociones = {"Poción de Curación", "Poción de Veneno", "Curación Mayor", "Poción de Invisibilidad"}; 
+
+        
     }
 }
