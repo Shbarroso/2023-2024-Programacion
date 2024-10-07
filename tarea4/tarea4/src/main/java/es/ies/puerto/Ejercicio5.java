@@ -17,6 +17,6 @@ public class Ejercicio5 {
                 sith++;
             }
         }
-        System.out.println("Jedi:"+jedi+ "Sith: "+sith);
+        System.out.println("Jedi:" +jedi+ " Sith: "+sith);
     }
 }
