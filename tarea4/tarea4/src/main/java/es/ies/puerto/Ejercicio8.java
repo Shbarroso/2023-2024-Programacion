@@ -9,8 +9,17 @@ public class Ejercicio8 {
         String[] botinEquipo1 = {"Espada mágica", "Escudo resistente"};
         String[] botinEquipo2 = {"Anillo de poder", "Armadura encantada"};
 
-        String[] botinEquipo3 = new String[botinEquipo1.length + botinEquipo2.length];
+        int botinEquipo3 = botinEquipo1.length + botinEquipo2.length;
+        String[] botin = new String[botinEquipo3];
 
-
+        for (int i = 0; i < botinEquipo1.length; i++) {
+            botin[i] = botinEquipo1[i];
+        }
+        for (int i = 0; i < botinEquipo2.length; i++) {
+            botin[botinEquipo1.length + i] = botinEquipo2[i];
+        }
+        for (String botin1 : botin) {
+            System.out.print(botin1 + ", ");
+        }
     }
 }
