@@ -1,6 +1,9 @@
 package es.ies.puerto;
+/**
+ * @author Shbrroso
+ * @version 1.0.0
+ */
 
-import java.util.Scanner;
 
 public class Ejercicio13 {
 public static void main(String[] args) {
