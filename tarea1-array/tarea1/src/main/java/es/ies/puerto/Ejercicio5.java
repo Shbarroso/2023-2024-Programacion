@@ -8,6 +8,9 @@ package es.ies.puerto;
 public class Ejercicio5 {
     public static void main(String[] args) {
         String nombre = "Goku";
+        Integer nivel = Math.abs(3);
+        String resultado = nombre +"SSJ"+ Integer.toString(nivel);
+        System.out.println(resultado);
         
     }
 }

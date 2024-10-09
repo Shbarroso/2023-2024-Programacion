@@ -1,10 +1,19 @@
 package es.ies.puerto;
 /**
- * @author Shbrroso
+ * Crea un programa que dada la frase "Viva la Resistencia",
+ * cuente cuántas veces aparece la letra "a".
+ * @author Shbarroso
  * @version 1.0.0
  */
 public class Ejercicio6 {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        String frase = "Viva la Resistencia";
+        int contador = 0;
+        for (int i = 0; i < frase.length(); i++){
+            if (frase.charAt(i) == 'a') {
+                contador++;
+            }
+        }
+        System.out.println(contador);
     }
 }
