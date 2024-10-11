@@ -9,6 +9,10 @@ package es.ies.puerto;
 public class Ejercicio22 {
     public static void main(String[] args) {
         String hechizo = "Expecto Patronum";
-                
+        boolean hechizo1 = false;
+        if (hechizo.contains(hechizo)){
+            hechizo1 = true;
+        }
+        System.out.println(hechizo1);
     }
 }
