@@ -4,28 +4,32 @@ public class Persona {
 
     private String nombre;
     private int edad;
-    private String dni;
 
-
+/**
+ * Constructor por defecto
+ */
     public Persona() {
     }
-
+/**
+ * Constructor coon el nombre del objeto
+ * @param nombre de la persona.
+ */
     public Persona(String nombre) {
         this.nombre = nombre;
     }
-
+/**
+ * Constructor con el nombre y edad del objeto
+ * @param nombre de la persona
+ * @param edad de la persona
+ */
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
     }
-
-    public Persona(String nombre, int edad, String dni) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.dni = dni;
-    }
-
-
+/**
+ * Getter y Setter.
+ * @return
+ */
     public String getNombre() {
         return this.nombre;
     }
@@ -42,27 +46,8 @@ public class Persona {
         this.edad = edad;
     }
 
-    public String getDni() {
-        return this.dni;
+    public void mostarInfo(){
+        System.out.println("Nombre: "+nombre+", edad: "+edad);
     }
-
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "{" +
-            " nombre='" + getNombre() + "'" +
-            ", edad='" + getEdad() + "'" +
-            ", dni='" + getDni() + "'" +
-            "}";
-    }
-
-
-
-
 
 }
