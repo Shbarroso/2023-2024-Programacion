@@ -49,5 +49,15 @@ public class Persona {
     public void mostarInfo(){
         System.out.println("Nombre: "+nombre+", edad: "+edad);
     }
+    public void mostarInfo2(){
+        System.out.println("Nombre: "+nombre+", edad: "+edad);
+    }
 
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                '}';
+    }
 }
