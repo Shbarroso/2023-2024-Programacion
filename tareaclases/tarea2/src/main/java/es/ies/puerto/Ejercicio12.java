@@ -1,6 +1,6 @@
 package es.ies.puerto;
 
-public class Ejercicio1 {
+public class Ejercicio12 {
 
     static private Persona persona;
     static private Persona persona2;

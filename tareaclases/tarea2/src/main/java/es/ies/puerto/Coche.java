@@ -6,18 +6,20 @@ public class Coche {
     private int anio;
 
     public Coche() {
-        this.anio = 1886;
+    }
+    
+    public Coche(String marca) {
+        this.marca = marca;
+    }
+
+    public Coche(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
     }
 
     public Coche(String marca, String modelo, int anio) {
         this.marca = marca;
         this.modelo = modelo;
-        this.anio = anio;
-        if (anio <= 1886) {
-            anio = 1886;
-        }else if (anio>= 2024) {
-            anio = 2024;
-        }
         this.anio = anio;
     }
 
@@ -42,11 +44,29 @@ public class Coche {
         return this.anio;
     }
 
-    public void setAnio(int anio) {
+    public void setAnio(int anio) { 
         if (anio <= 1886) {
-            anio = 1886;
+            this.anio = 1886;
+        }else{
+            this.anio = anio;
         }
-        this.anio = anio;
     }
+
+    public void mostarInformacion(){
+        System.out.println("Marca: "+marca+", Modelo: "+modelo+ ", Años: "+anio);
+    }
+
+    public void mostarInfo(){
+        System.out.println("Marca: "+marca+", Modelo: "+modelo+ ", Años: "+anio);
+    }
+
+
+    @Override
+    public String toString() {
+        return"Marca: " + getMarca()+
+            ", Modelo: " + getModelo() +
+            ", año: " + getAnio();
+    }
+
 
 }
