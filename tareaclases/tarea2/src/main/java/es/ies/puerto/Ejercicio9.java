@@ -1,5 +1,8 @@
 package es.ies.puerto;
-
+/**
+ * @author Shbarroso
+ * @version 1.0.0
+ */
 public class Ejercicio9 {
     static private Empleado empleado2;
 

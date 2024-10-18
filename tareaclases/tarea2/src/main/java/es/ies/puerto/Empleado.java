@@ -7,7 +7,10 @@ public class Empleado {
 
     public Empleado() {
     }
-
+    public Empleado(String nombre, String puesto) {
+        this.nombre = nombre;
+        this.puesto = puesto;
+    }
     public Empleado(String nombre, String puesto, float salario) {
         this.nombre = nombre;
         this.puesto = puesto;
@@ -27,8 +30,8 @@ public class Empleado {
     }
 
     public void setPuesto(String puesto) {
-        if (puesto == null || puesto.trim().isEmpty()){
-            this.puesto = "puesto";
+        if (puesto == null || puesto.isEmpty()){
+            puesto = "puesto";
         }else {
             this.puesto = puesto;
         }
