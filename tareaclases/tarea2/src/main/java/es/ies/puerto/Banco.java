@@ -26,6 +26,18 @@ public class Banco {
             "}";
     }
 
+    public void depositar(float cantidad){
+        if (cantidad > 0){
+            saldo += cantidad;
+            System.out.println("Has depositado: "+cantidad);
+        }
+    }
 
+    public void retirar (float cantidad){
+        if (cantidad >0 && cantidad <= saldo){
+            saldo -= cantidad;
+            System.out.println("Has retirado: "+cantidad);
+        }
+    }
 
 }
