@@ -11,8 +11,8 @@ public class Producto {
 
     public Producto(String nombre, float precio, float stock) {
         this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
+        setPrecio(precio);
+        setStock(stock);
     }
 
     public String getNombre() {
@@ -28,7 +28,9 @@ public class Producto {
     }
 
     public void setPrecio(float precio) {
-        this.precio = precio;
+        if (precio >0) {
+            this.precio = precio;
+        }
     }
 
     public float getStock() {
@@ -36,16 +38,16 @@ public class Producto {
     }
 
     public void setStock(float stock) {
-        this.stock = stock;
+        if (stock >=0) {
+            this.stock = stock;
+        }
     }
 
     @Override
     public String toString() {
-        return "{" +
-            " nombre='" + getNombre() + "'" +
-            ", precio='" + getPrecio() + "'" +
-            ", stock='" + getStock() + "'" +
-            "}";
+        return "Nombre: " + getNombre() +
+            ", precio: " + getPrecio() +
+            ", stock: " + getStock();
     }
 
 }

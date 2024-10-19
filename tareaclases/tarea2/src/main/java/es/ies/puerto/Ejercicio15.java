@@ -5,5 +5,6 @@ public class Ejercicio15 {
 
     public static void main(String[] args) {
         producto = new Producto("Laptop", 1000, 50);
+        System.out.println(producto);
     }
 }
