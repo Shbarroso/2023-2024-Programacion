@@ -1,29 +1,38 @@
 package es.ies.puerto;
-
+/**
+ * Ejercicio 7
+ * Crea una clase Banco con un atributo privado saldo. 
+ * Implementa métodos para depositar y retirar dinero, 
+ * y un método getter para consultar el saldo.
+ * @author Shbarroso
+ * @version 1.0.0
+ */
 public class Banco {
     private float saldo;
 
+    /**
+     * Constructor por defecto
+     */
 
     public Banco() {
     }
-
-    public Banco(float saldo) {
+    /**
+     * Constructor con todas las propiedades
+     * @param saldo del cliente
+     */
+    
+     public Banco(float saldo) {
         this.saldo = saldo;
     }
-
+    /**
+     * Getters and Setters
+     */
     public float getSaldo() {
         return this.saldo;
     }
 
     public void setSaldo(float saldo) {
         this.saldo = saldo;
-    }
-
-    @Override
-    public String toString() {
-        return "{" +
-            " saldo='" + getSaldo() + "'" +
-            "}";
     }
 
     public void depositar(float cantidad){
@@ -40,4 +49,10 @@ public class Banco {
         }
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+            " saldo='" + getSaldo() + "'" +
+            "}";
+    }
 }

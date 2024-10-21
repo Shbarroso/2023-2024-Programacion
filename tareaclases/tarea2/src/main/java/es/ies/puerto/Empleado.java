@@ -1,22 +1,39 @@
 package es.ies.puerto;
-
+/**
+ * Ejercicio 8
+ * Crea una clase Empleado con los atributos nombre, puesto y salario. 
+ * Usa getters y setters para cada atributo. El salario no puede ser negativo.
+ * Ejercicio 9
+ * Modifica la clase Empleado para que el setter de puesto no permita 
+ * valores vacíos o nulos.
+ * @author Shbarroso
+ * @version 1.0.0
+ */
 public class Empleado {
     private String nombre;
     private String puesto;
     private float salario;
-
+/**
+     * Constructor por defecto
+     */
     public Empleado() {
     }
-    public Empleado(String nombre, String puesto) {
-        this.nombre = nombre;
-        this.puesto = puesto;
-    }
+    
+    /**
+     * Constructor con todas las propiedades
+     * @param nombre del empleado
+     * @param puesto del empleado
+     * @param salario del empleado
+     */
     public Empleado(String nombre, String puesto, float salario) {
         this.nombre = nombre;
-        this.puesto = puesto;
-        this.salario = salario;
+        setPuesto(puesto);
+        setSalario(salario);
     }
 
+    /**
+     * Getters and Setters
+     */
     public String getNombre() {
         return nombre;
     }
