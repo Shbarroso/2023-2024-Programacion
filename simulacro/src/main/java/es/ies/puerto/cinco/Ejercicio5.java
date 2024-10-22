@@ -6,6 +6,6 @@ public class Ejercicio5 {
     public static void main(String[] args) {
         circulo = new Circulo(5);
         System.out.println(circulo);
-        System.out.println(perimetro);
+
     }
 }

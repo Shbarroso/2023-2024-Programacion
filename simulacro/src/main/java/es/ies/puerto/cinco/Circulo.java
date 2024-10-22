@@ -24,7 +24,7 @@ public class Circulo {
     }
 
     public void perimetro(float perimetro){
-        perimetro = 2*Math.PI*radio;
+
     }
 
 }
