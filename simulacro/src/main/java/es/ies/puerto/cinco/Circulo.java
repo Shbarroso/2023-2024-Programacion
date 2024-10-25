@@ -23,8 +23,13 @@ public class Circulo {
         return" Radio:" + getRadio();
     }
 
-    public void perimetro(float perimetro){
-
+    public float area(){
+        double area = Math.PI * Math.pow(radio, 2);
+        return (float) area;
+    }
+    public float perimetro(){
+        double perimetro = 2 * Math.PI * radio;
+        return (float) perimetro;
     }
 
 }
