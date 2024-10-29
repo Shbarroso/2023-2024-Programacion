@@ -65,7 +65,7 @@ public class Coche {
     public void frenar(float decrementar){
         if (decrementar > 0){
             this.velocidad -= decrementar;
-            System.out.println("El coche a franado a: "+decrementar);
+            System.out.println("El coche a frenado a: "+decrementar);
         }else {
             System.out.println("Tiene que ser positivo el decremento");
         }
