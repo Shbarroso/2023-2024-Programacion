@@ -1,6 +1,5 @@
 package es.ies.puerto.diez.cuatro;
 
-import java.util.Objects;
 
 public class Coordenadas {
     private int x;

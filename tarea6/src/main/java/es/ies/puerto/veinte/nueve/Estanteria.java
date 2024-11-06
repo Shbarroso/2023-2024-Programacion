@@ -2,7 +2,6 @@ package es.ies.puerto.veinte.nueve;
 
 import es.ies.puerto.diez.siete.Libro;
 
-import java.util.Arrays;
 
 public class Estanteria {
     private String nombre;

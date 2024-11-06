@@ -1,6 +1,5 @@
 package es.ies.puerto.treinta.dos;
 
-import java.util.Arrays;
 
 public class Hospital {
     private String nombre;
