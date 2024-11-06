@@ -14,20 +14,21 @@ public class Coordenadas {
         this.y = y;
     }
 
-    public int getX() {
-        return x;
+    public double distancia(Coordenadas otraCoordenadas) {
+        double dx = this.x - otraCoordenadas.x;
+        double dy = this.y - otraCoordenadas.y;
+        return Math.sqrt(dx * dx + dy * dy);
     }
 
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
+    /**
+     * Método para desplazar la coordenada a partir de un ángulo y una distancia
+     * @param angulo
+     * @param distancia
+     */
+    public void desplazar(double angulo, double distancia) {
+        double anguloRad = Math.toRadians(angulo);
+        this.x += distancia * Math.cos(anguloRad);
+        this.y += distancia * Math.sin(anguloRad);
     }
 
     @Override
@@ -36,18 +37,5 @@ public class Coordenadas {
                 "x=" + x +
                 ", y=" + y +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Coordenadas that = (Coordenadas) o;
-        return x == that.x && y == that.y;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(x, y);
     }
 }

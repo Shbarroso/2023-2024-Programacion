@@ -46,7 +46,7 @@ public class Concesionario {
         for(int i = 0; i < this.numVehiculos; i++) {
             mensaje += vehiculos[i];
         }
-        return "numVehiculos='" + numVehiculos+ ", "+mensaje;
+        return "numVehiculos='" + numVehiculos+ "'"+mensaje;
     }
 
 }

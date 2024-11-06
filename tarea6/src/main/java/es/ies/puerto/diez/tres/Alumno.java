@@ -69,8 +69,7 @@ public class Alumno {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Alumno alumno = (Alumno) o;
-        return Float.compare(notaMatematica, alumno.notaMatematica) == 0 && Float.compare(notaCiencia, alumno.notaCiencia)
-                == 0 && Float.compare(notaProgramacion, alumno.notaProgramacion) == 0 && Objects.equals(nombre, alumno.nombre);
+        return notaMatematica == alumno.notaMatematica && notaCiencia == alumno.notaCiencia && notaProgramacion == alumno.notaProgramacion;
     }
 
     @Override

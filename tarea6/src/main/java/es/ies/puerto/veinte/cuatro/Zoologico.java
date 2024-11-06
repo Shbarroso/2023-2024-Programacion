@@ -78,7 +78,7 @@ public class Zoologico {
 
     /**
      * Constructor para eleminar un animal.
-     * @param animal
+     * @param animalEliminar
      * @return
      */
     public boolean deleteAnimal(Animal animalEliminar){
@@ -95,6 +95,7 @@ public class Zoologico {
         for(int i = 0; i< animales.length; i++) {
             if (animales[i] != null) {
                 if (animalEliminar.equals(animales[i])) {
+                    System.out.println("iguales");
                     animales[i] = null;
                     numeroAnimales--;
                     return true;
@@ -102,7 +103,7 @@ public class Zoologico {
             }
         }
 
-        for(int i = 0; i<animales.length; i++){
+        for(int i = 0; i<animales.length - 1; i++){
             if (animales[i] == null) {
                 animales[i] = animales[i+1];
                 animales[i+1] = null;

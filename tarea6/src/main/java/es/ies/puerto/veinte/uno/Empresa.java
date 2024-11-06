@@ -10,7 +10,9 @@ public class Empresa {
     /**
      * Constructor por defecto
      */
-    public Empresa() {}
+    public Empresa() {
+
+    }
 
     /**
      * Constructor de la clase
@@ -43,17 +45,18 @@ public class Empresa {
      * @param puesto
      * @return
      */
-    @Deprecated()
-    public boolean eliminarEmpleado(String nombre, String puesto) {
-        for (int i = 0; i < numEmpleados; i++) {
-            if (empleados[i].getNombre().equals(nombre) && empleados[i].getPuesto().equals(puesto)) {
-                empleados[i] = empleados[numEmpleados - 1]; //
-                empleados[numEmpleados - 1] = null;
+
+    public boolean eliminarEmpleado(Empleado empleado) {
+        if (empleado == null || numEmpleados == 0) {
+            return false;
+        }
+        for (int i = 0; i < empleados.length; i++) {
+            if (empleado.equals(empleados[i])) {
+                empleados[i] = null;
                 numEmpleados--;
                 return true;
             }
         }
-
         return false;
     }
 
@@ -63,11 +66,12 @@ public class Empresa {
      */ 
     @Override
     public String toString() {
-        return "Empresa{" +
-                "nombre='" + nombre + '\'' +
-                ", capacidad=" + empleados.length +
-                ", empleadosRegistrados=" + numEmpleados +
-                '}';
+        String mensaje = "Nombre de Empresa: " + nombre + "\n";
+        for (Empleado empleado : empleados) {
+            if (empleado != null) {
+                mensaje += empleado.toString();
+            }
+        }
+        return mensaje;
     }
-    
 }

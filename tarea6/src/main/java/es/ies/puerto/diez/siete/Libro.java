@@ -51,10 +51,13 @@ public class Libro {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == this)
+            return true;
+        if (!(o instanceof Libro)) {
+            return false;
+        }
         Libro libro = (Libro) o;
-        return paginas == libro.paginas && Objects.equals(autor, libro.autor) && Objects.equals(titulo, libro.titulo);
+        return paginas== libro.paginas;
     }
 
     @Override

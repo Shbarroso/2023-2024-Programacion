@@ -1,5 +1,7 @@
 package es.ies.puerto.veinte.cuatro;
 
+import java.util.Objects;
+
 public class Animal {
     private String nombre;
     private String especie;
@@ -35,5 +37,19 @@ public class Animal {
             " nombre='" + getNombre() + "'" +
             ", especie='" + getEspecie() + "'" +
             "}";
+    }
+
+
+
+     public boolean equals(Animal animal) {
+        if (this.nombre.equals(animal.nombre) && this.especie.equals(animal.especie)){
+            return true;
+        }
+        return false;
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre, especie);
+
     }
 }

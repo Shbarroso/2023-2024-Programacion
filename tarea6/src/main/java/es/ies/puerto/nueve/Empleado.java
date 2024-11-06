@@ -59,6 +59,11 @@ public class Empleado {
         }
     }
 
+    /**
+     *
+     * @param obj
+     * @return
+    */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;                 // Si son el mismo objeto, son iguales
@@ -68,9 +73,18 @@ public class Empleado {
         return nombre.equals(otroEmpleado.nombre) && puesto.equals(otroEmpleado.puesto);
     }
 
+
+
+    public boolean equals(Empleado otroEmpleado) {
+        System.out.println(getClass());
+        System.out.println(otroEmpleado.getClass());
+        return this.nombre.equals(otroEmpleado.nombre) && puesto.equals(otroEmpleado.puesto);
+    }
+
     /**
      * toString() para mostrar la información del empleado
      */
+
     @Override
     public String toString() {
         return "Empleado{" +
