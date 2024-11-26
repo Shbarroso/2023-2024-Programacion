@@ -16,5 +16,7 @@ public class Ejercicio42 {
 
         cine.deleteProyeccion(proyecciones2);
         System.out.println(cine);
+
+        System.out.println("¿existe?"+cine.buscarProyeccion(proyecciones));
     }
 }

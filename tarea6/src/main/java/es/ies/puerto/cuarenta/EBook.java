@@ -54,7 +54,7 @@ public class EBook {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         EBook eBook = (EBook) o;
-        return anio == eBook.anio && Objects.equals(nombre, eBook.nombre) && Objects.equals(isbn, eBook.isbn);
+        return isbn == eBook.isbn;
     }
 
     @Override

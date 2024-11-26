@@ -1,6 +1,7 @@
 package es.ies.puerto.cuarenta;
 
 import es.ies.puerto.diez.siete.Libro;
+import es.ies.puerto.dos.Producto;
 
 public class BibliotecaDigital {
     private String nombre;
@@ -68,7 +69,32 @@ public class BibliotecaDigital {
         }
         return false;
     }
-    public EBook buscarEbook(String nombre) {
+
+    public boolean buscarEbook(EBook eBookBuscado) {
+       for(int i = 0; i<eBooks.length; i++){
+           EBook eBook = eBooks[i];
+           if (eBook!= null) {
+               if (eBook.equals(eBookBuscado)) {
+               return true;
+               }
+           }
+       }
+       return false;
+   }
+   public boolean actualizar(EBook EBookActualizado) {
+    for(int i = 0; i<eBooks.length; i++){
+        EBook eBook = eBooks[i];
+        if (eBook!= null) {
+            if (eBook.equals(EBookActualizado)) {
+                eBooks[i] = EBookActualizado;
+            return true;
+            }
+        }
+    }
+    return false;
+}
+
+    public EBook buscarEbooks(String nombre) {
         for (int i = 0; i < numEBook; i++) {
             if (eBooks[i] != null && eBooks[i].getNombre().equalsIgnoreCase(nombre)) {
                 return eBooks[i];

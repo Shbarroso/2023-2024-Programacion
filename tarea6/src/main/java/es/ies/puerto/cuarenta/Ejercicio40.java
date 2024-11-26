@@ -16,5 +16,11 @@ public class Ejercicio40 {
 
         bibliotecaDigital.deleteEbook(eBook2);
         System.out.println(bibliotecaDigital);
+
+        bibliotecaDigital.buscarEbook(eBook2);
+        System.out.println("¿Existe este Ebook2?"+bibliotecaDigital.buscarEbook(eBook));
+        
+        bibliotecaDigital.actualizar(new EBook("9","h",6));
+        System.out.println(bibliotecaDigital);
     }
 }

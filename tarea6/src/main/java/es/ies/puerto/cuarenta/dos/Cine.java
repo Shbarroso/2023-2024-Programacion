@@ -1,5 +1,6 @@
 package es.ies.puerto.cuarenta.dos;
 
+import es.ies.puerto.cuarenta.EBook;
 import es.ies.puerto.diez.siete.Libro;
 
 public class Cine {
@@ -68,6 +69,19 @@ public class Cine {
         }
         return false;
     }
+
+
+    public boolean buscarProyeccion(Proyecciones eBookBuscado) {
+       for(int i = 0; i<proyecciones.length; i++){
+           Proyecciones proyeccione = proyecciones[i];
+           if (proyeccione!= null) {
+               if (proyeccione.equals(eBookBuscado)) {
+               return true;
+               }
+           }
+       }
+       return false;
+   }
 
     @Override
     public String toString() {
