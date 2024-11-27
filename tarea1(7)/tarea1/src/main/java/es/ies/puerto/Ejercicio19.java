@@ -11,6 +11,18 @@ import java.util.List;
 public class Ejercicio19 {
 public static void main(String[] args) {
         List<Persona> personas = new ArrayList<>();
+        String dni = "12345678A";
         personas.add(new Persona("Alejanro", 25, "12345678A"));
+        personas.add(new Persona("Samuel", 13, "12345679A"));
+        personas.add(new Persona("Eduardo", 42, "12345668A"));
+        personas.add(new Persona("Hector", 12, "12345673A"));
+
+        for (Persona nombre : personas) {
+            System.out.println(nombre);
+            if (nombre.getDni().equals(dni)) {
+                System.out.println(nombre);
+            }
+        }
+
     }
 }

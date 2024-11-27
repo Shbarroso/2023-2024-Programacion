@@ -16,10 +16,13 @@ import java.util.List;
 
 public class Ejercicio15 {
 public static void main(String[] args) {
-    List<String> nombres = new ArrayList<>(Arrays.asList(
-        "Alejanro", "Barbaroja", "Comandante", "Daniel", "Elefante", "Fabi", "Gogo"
-        ));
+    ArrayList<String> nombres = new ArrayList<String>();
+    nombres.add("samuel");
+    nombres.add("Nadja");
+    nombres.add("Ariadna");
+    ArrayList nombres2 = (ArrayList) nombres.clone();
+    System.out.println(nombres2);
 
         
-}
+    }
 }
