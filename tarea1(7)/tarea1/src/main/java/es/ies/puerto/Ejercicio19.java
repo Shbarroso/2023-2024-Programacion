@@ -12,6 +12,11 @@ public class Ejercicio19 {
 public static void main(String[] args) {
         List<Persona> personas = new ArrayList<>();
         String dni = "12345678A";
+        Persona personabuscada = new Persona(dni);
+        int posicion = personas.indexOf(personabuscada);
+        if (posicion >= 0) {
+            System.out.println("Persona buscada: "+personas.get(posicion));
+        }
         personas.add(new Persona("Alejanro", 25, "12345678A"));
         personas.add(new Persona("Samuel", 13, "12345679A"));
         personas.add(new Persona("Eduardo", 42, "12345668A"));
@@ -23,6 +28,5 @@ public static void main(String[] args) {
                 System.out.println(nombre);
             }
         }
-
     }
 }
