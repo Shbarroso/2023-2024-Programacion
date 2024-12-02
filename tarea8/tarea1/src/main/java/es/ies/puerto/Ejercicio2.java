@@ -25,6 +25,8 @@ public class Ejercicio2 {
         System.out.println("Lista después de ordenar: " + list1);
     }
     public static void ordenar(List<String> list){
-        Collections.sort(list);
+        if (list!=null) {
+            Collections.sort(list);
+        }
     }
 }
