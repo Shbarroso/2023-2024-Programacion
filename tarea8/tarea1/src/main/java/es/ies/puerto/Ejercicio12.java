@@ -2,6 +2,7 @@ package es.ies.puerto;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -13,7 +14,7 @@ public class Ejercicio12 {
         "Inicio", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Fin"
     ));
 public static void main(String[] args) {
-    
+    System.out.println(crearLista(palabras, "Inicio", "Fin"));
     }
     static List<String> crearLista(List<String> lista, String inicio, String fin){
         if (lista == null || lista.isEmpty()) {
@@ -22,7 +23,7 @@ public static void main(String[] args) {
         int poicion = lista.indexOf(inicio);
         int poscion2 = lista.indexOf(fin);
         lista.subList(poicion, poscion2);
-        
+        Collections.reverse(lista);
         return lista;
     }
 }
