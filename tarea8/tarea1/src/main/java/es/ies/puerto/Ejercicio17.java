@@ -11,7 +11,7 @@ import java.util.List;
 public class Ejercicio17 {
 public static void main(String[] args) {
     List<Integer> lista1 = crearLista(20);
-    List<Integer> lista2 = crearLista(20);
+    List<Integer> lista2 = crearLista(25);
     System.out.println(lista1);
     System.out.println(lista2);
     List<Integer> numerosComunes = numerosComunes(lista1, lista2);
@@ -34,7 +34,9 @@ public static void main(String[] args) {
     }
     public static List<Integer> numerosUnicos(List<Integer> lista1, List<Integer> lista2){
         List<Integer> numerosUnicos = new ArrayList<>(lista1);
-        numerosUnicos.removeAll(lista2);
+        numerosUnicos.addAll(lista2);
+        List<Integer> comunes = numerosComunes(lista1, lista2);
+        numerosUnicos.removeAll(comunes);
         return numerosUnicos;
     }
 }

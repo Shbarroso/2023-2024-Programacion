@@ -59,4 +59,14 @@ public static void main(String[] args) {
         deleteProducto(listaOrigen, producto);
         return addproducto(listaDestino, producto);
     }
+    public static boolean deleteisEmpty(List<List<String>> lista, int posicion){
+        if (lista == null || lista.isEmpty()) {
+            return false;
+        }
+        if(lista.get(posicion).isEmpty()){
+            lista.remove(posicion);
+            return true;
+        }
+        return false;
+    }
 }
