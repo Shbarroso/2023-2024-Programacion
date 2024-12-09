@@ -7,7 +7,7 @@ import java.util.List;
 public class Ejercicio4 {
     static List<Integer> enteros = new ArrayList<>(Arrays.asList(1, 2, 3));
     public static void main(String[] args) {
-        System.out.println(eliminarElemento(enteros, 1));
+        System.out.println(eliminarElemento(enteros, 2));
         System.out.println(enteros);
     }
     static boolean eliminarElemento(List<Integer> lista, int valor){
