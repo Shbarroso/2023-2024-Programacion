@@ -2,7 +2,10 @@ package es.ies.puerto;
 
 import java.util.Scanner;
 import java.util.Vector;
-
+/**
+ * @author Shbarroso
+ * @version 1.0.0
+ */
 public class Ejercicio1 {
     static Vector<String> vector = new Vector<>();
 
@@ -17,6 +20,7 @@ public class Ejercicio1 {
         vector.add("Cereza");
         vector.add("Mango");
         vector.add("Uva");
+        System.out.println(vector.capacity());
         return vector;
     }
 }
