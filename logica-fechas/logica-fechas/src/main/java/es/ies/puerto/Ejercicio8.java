@@ -4,6 +4,10 @@ import java.time.LocalDate;
 
 public class Ejercicio8 {
     public static long diasDesdeInicioDelanio(LocalDate fecha) {
-        return -1l;
+        if (fecha == null) {
+            return -1l;
+        }
+
+        return fecha.getDayOfYear();
     }
 }
